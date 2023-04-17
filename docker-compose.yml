@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  
+  frontend:
+    build: ./Flask
+    image: tangkabodee63070044/webfrontend:1.0
+    ports:
+      - "8081:8081"
+    
