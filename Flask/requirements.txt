@@ -1,0 +1,6 @@
+flask
+requests
+selenium
+python-firebase
+firebase_admin
+chromedriver-autoinstaller

@@ -5,19 +5,20 @@ from selenium.webdriver.common.by import By
 import time
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.options import Options
+import chromedriver_autoinstaller
 
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
-cred = credentials.Certificate('./project-sw-tool-firebase-adminsdk-xlabq-8302f90534.json')
+cred = credentials.Certificate('./project-sw-tool-firebase-adminsdk-xlabq-7281acf22f.json')
 
 app = firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 
 # def adddata(name, username):
-#         doc_ref = db.collection(u'users').document('yotsanan')
+#         doc_ref = db.collection(u'users').document('yotsanan'
 #         doc_ref.set({
 #             u'name': name,
 #             u'username': username,
@@ -52,14 +53,19 @@ def about():
 
 @app.route('/new')
 def new():
-    return render_template("new.html")
+    doc_ref = db.collection(u'News').document(u'news_trash')
+    news = doc_ref.get()
+   
+
+    return render_template("new.html", new=news.to_dict())
 
 @app.route('/map')
 def map():
     chrome_options = Options()
     chrome_options.add_experimental_option("detach", True)
     url = 'https://www.google.com/maps/'
-    browser = webdriver.Chrome('chromedriver.exe' ,chrome_options=chrome_options)
+    chromedriver_autoinstaller.install()
+    browser = webdriver.Chrome(chrome_options=chrome_options)
     browser.get(url)
 
     time.sleep(4)
@@ -116,4 +122,4 @@ def addregister():
 
 
 if __name__ == '__main__':
-    app.run(debug= True, port=5001)
+    app.run(debug= True, port=8081, host="0.0.0.0")

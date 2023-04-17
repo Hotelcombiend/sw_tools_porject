@@ -22,6 +22,7 @@
             <h2>รายการขายสินค้า</h2>
             <div class="table-1" overflow-y: scroll>
                 <!-- <label>ขวดพลาสติก</label> -->
+                <form >
                 <table>
                     <tr>
                         <th>ชนิดขยะ</th>
@@ -33,37 +34,37 @@
                     <tr>
                         <td>กระดาษลังน้ำตาล</td>
                         <td>3.50 บาท</td>
-                        <td><button id="btnminus" type="button" class="minus" onclick="myFunction()">-</button></td>
+                        <td><button id="btnminus" type="button" class="minus" onclick="btnminus_1()">-</button></td>
                         <td id="price"></td>
-                        <td><button id="btnplus" type="button" class="plus" onclick="btnplus1()">+</button></td>
+                        <td><button id="btnplus" type="button" class="plus" onclick="btnplus_1()">+</button></td>
                     </tr>
                     <tr>
                         <td>กระดาษขาวดำA</td>
                         <td>10.50 บาท</td>
-                        <td><button type="button">-</button></td>
-                        <td>0</td>  
-                        <td><button type="button">+</button></td>
+                        <td><button id="btnminus2" type="button" class="minus" onclick="btnminus1()">-</button></td>
+                        <td id="price2"></td>
+                        <td><button id="btnplus2" type="button" class="plus" onclick="btnplus1()">+</button></td>
                     </tr>
                     <tr>
                         <td>กระดาษย่อย/เล่ม</td>
                         <td>2.50 บาท</td>
-                        <td><button type="button">-</button></td>
-                        <td>0</td>
-                        <td><button type="button">+</button></td>
+                        <td><button id="btnminus3" type="button" class="minus" onclick="btnminus_2()">-</button></td>
+                        <td id="price3"></td>
+                        <td><button id="btnplus3" type="button" class="plus" onclick="btnplus_2()">+</button></td>
                     </tr>
                     <tr>
                         <td>แกนกระดาษ/รังไข่</td>
                         <td>2.00 บาท</td>
-                        <td><button type="button">-</button></td>
-                        <td>0</td>
-                        <td><button type="button">+</button></td>
+                        <td><button id="btnminus4" type="button" class="minus" onclick="btnminus_3()">-</button></td>
+                        <td id="price4"></td>
+                        <td><button id="btnplus4" type="button" class="plus" onclick="btnplus_3()">+</button></td>
                     </tr>
                     <tr>
                         <td>พลาสติกเพทใส</td>
                         <td>12.00 บาท</td>
-                        <td><button type="button">-</button></td>
-                        <td>0</td>
-                        <td><button type="button">+</button></td>
+                        <td><button id="btnminus5" type="button" class="minus" onclick="btnminus_4()">-</button></td>
+                        <td id="price5"></td>
+                        <td><button id="btnplus5" type="button" class="plus" onclick="btnplus_4()">+</button></td>
                     </tr>
                     <tr>
                         <td>พลาสติกรวมสี</td>
@@ -144,6 +145,7 @@
                     </tr>
                     
                 </table>
+            </form>
             </div>
             <div class="price">
                 <h2>ราคารวม: 000</h2>
