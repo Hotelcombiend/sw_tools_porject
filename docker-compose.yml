@@ -4,7 +4,7 @@ services:
   
   frontend:
     build: ./Flask
-    image: tangkabodee63070044/webfrontend:1.0
+    image: hotelcombiend/webfrontend:1.0
     ports:
       - "8081:8081"
     
