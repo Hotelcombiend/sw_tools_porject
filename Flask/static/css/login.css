@@ -1,3 +1,4 @@
+<<<<<<< HEAD:Flask/static/css/login.css
 *{
     margin: 0;
     padding: 0;
@@ -169,4 +170,177 @@ header{
 
 .g-signin2{
     margin-left: 100px;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Navbar for homepage */
+header{
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7AA874;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+}
+
+.navigation a{
+    position: relative;
+    top:10px;
+    margin:20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation a::after{
+    content: '';
+    width: 100%;
+    height: 50px;
+    top: -15;
+    left: 0;
+    background-color: #183A1D;
+    position: absolute;
+    opacity: 0.5;
+    transform: scale(0);
+    border-radius: 50%;
+}
+
+.navigation a:hover::after{
+    transform: scale(1);
+}
+
+
+
+
+/* This is backgroud image for first homepage */
+.body1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-repeat: no-repeat; */
+    position: relative;
+}
+
+
+.body1::after {
+    content: "";
+    position: absolute;
+    background-image: url('https://static.thairath.co.th/media/dFQROr7oWzulq5FZYjXf2mOz0IuAhF8N9gRGdmd9niphTiz4TnFBsrOwXNojt9OwFJC.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.7;
+    z-index: -1;
+}
+.login-logo{
+    font-size: 3em;
+    color: black;
+    text-align: center;
+    position:relative;
+    top: -30px;
+
+}
+
+.input-form{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    margin: 20px 0;
+    border-bottom: 2px solid black ;
+    top: -20;
+}
+
+.input-form label{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    /* transform: scaleY(-50%); */
+    pointer-events: none;
+    transition: .5s;
+    }
+
+.input-form input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-top: 10%;
+}
+
+.input-form input:focus~label,
+.input-form input:valid~label {
+    top: -4px;
+}
+
+.input-form .icon-login{
+    position: absolute;
+    right: 8px;
+    top: 20px;
+    
+}
+
+.box-login{
+    position: relative;
+    background-color: transparent;
+    border: 5px solid rgb(255, 255, 255, .9);
+    width: 420px;
+    height: 500px;
+    border-radius: 30px;
+    backdrop-filter:blur(50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btnlogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 30px;
+    z-index: 2;
+}
+
+.btnlogin button{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.textlogin{
+    margin: 20px 20px;
+}
+
+.btnlogin button:hover{
+    background-color: #183A1D;
+    color: aqua;
+}
+
+.g-signin2{
+    margin-left: 100px;
+>>>>>>> 070a50e3e06961be2dbc6428265854f85d266b4c:login.css
 }
