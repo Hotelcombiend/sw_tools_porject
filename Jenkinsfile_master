@@ -28,7 +28,7 @@ pipeline {
                             sh 'docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD'
                         }
                         sh 'docker push hotelcombiend/webfrontend:1.0'
-                        sh "docker-compose push"
+                        sh "docker-compose up -d"
                     }
                 }
             }
