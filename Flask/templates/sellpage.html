@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/sellpage.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Trash Project</h2>
+        <nav class="navigation">
+            <a href="/home">หน้าแรก</a>
+            <a href="/about">เกี่ยวกับเรา</a>
+            <a href="#table">ราคา ซื้อขาย - ขายของเก่า</a>
+            <a href="/new">ข่าวสารและกิจกรรม</a>
+            <a href="/login">💂‍♀️💂‍♂️</a>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="sell-box">
+            <h2>รายการขายสินค้า</h2>
+            <div class="table-1" overflow-y: scroll>
+                <!-- <label>ขวดพลาสติก</label> -->
+                <table>
+                    <tr>
+                        <th>ชนิดขยะ</th>
+                        <th>ราคาขยะต่อกิโลกรัม</th>
+                        <th></th>
+                        <th>จำนวน</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>กระดาษลังน้ำตาล</td>
+                        <td>3.50 บาท</td>
+                        <td><button id="btnminus" type="button" class="minus" onclick="myFunction()">-</button></td>
+                        <td id="price"></td>
+                        <td><button id="btnplus" type="button" class="plus" onclick="btnplus1()">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>กระดาษขาวดำA</td>
+                        <td>10.50 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>  
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>กระดาษย่อย/เล่ม</td>
+                        <td>2.50 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>แกนกระดาษ/รังไข่</td>
+                        <td>2.00 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>พลาสติกเพทใส</td>
+                        <td>12.00 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>พลาสติกรวมสี</td>
+                        <td>6.50 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>พลาสติกแกลลอนนม</td>
+                        <td>16.00 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>พลาสติกดำ</td>
+                        <td>3.00 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>พลาสติกกรอบ</td>
+                        <td>3.00 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>เบียร์ลีโอ</td>
+                        <td>15.00 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>เบียร์ช้าง(ใหญ่)</td>
+                        <td>15.00 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>เบียร์สิงห์</td>
+                        <td>11.50 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>น้ำมันพืช(กก.)</td>
+                        <td>15.00 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>กระป๋องสังกะสี</td>
+                        <td>4.00 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>เหล็กหนา</td>
+                        <td>12.00 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    <tr>
+                        <td>ทองแดงปอกใหญ่</td>
+                        <td>255 บาท</td>
+                        <td><button type="button">-</button></td>
+                        <td>0</td>
+                        <td><button type="button">+</button></td>
+                    </tr>
+                    
+                </table>
+            </div>
+            <div class="price">
+                <h2>ราคารวม: 000</h2>
+            </div>
+            <div class="btn-sell">
+                <button type="button">sell</button>
+            </div>
+        </div>
+    </div>
+    <script src="../static/scripts/sellscript.js"></script>
+</body>
+</html>

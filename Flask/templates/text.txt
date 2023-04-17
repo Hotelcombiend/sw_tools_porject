@@ -1,0 +1,4 @@
+# import requests
+# url = "https://www.xn--12c7bzakgbj6bza1cbe6b3jwh.com/price"
+# web_Data = requests.get(url)
+# print(web_Data.text)
